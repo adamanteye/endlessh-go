@@ -24,6 +24,7 @@ spec:
             - name: metrics
               containerPort: 2112
           securityContext:
+            readOnlyRootFilesystem: true
             allowPrivilegeEscalation: false
             capabilities:
               drop:
